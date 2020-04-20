@@ -56,7 +56,7 @@ export default {
           code: 'es',
           name: 'Español',
           iso: 'es-DO',
-          file: 'en.js'
+          file: 'es.js'
         },
         {
           code: 'de',
@@ -66,13 +66,27 @@ export default {
 
         }
       ],
-      // strategy: 'prefix_except_default', 
+      strategy: 'prefix_except_default', 
 
       // detectBrowserLanguage: {
       //   useCookie: false
       // },
+      lazy: 'true',
       defaultLocale: 'en',
-      langDir: 'locales/'
+      langDir: 'locales/',
+      parsePages: false,
+      pages: {
+        home: {
+          en: '/',
+          es: '/',
+          it: '/',
+        },
+        'products/introducers/index': {
+          en:'/products/introducers',
+          es:'/productos/introductores',
+          de:'/produkte/einführer',
+        }
+      }
     }]
   ],
   /*

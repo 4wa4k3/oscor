@@ -10,7 +10,7 @@
       </nuxt-link>
     </div>
     <div>
-      <nuxt-link :to="localePath('home')">Home</nuxt-link>
+      <nuxt-link :to="'/'">{{ $t('pages.home') }}</nuxt-link>
     </div>
     <nuxt />
   </div>
