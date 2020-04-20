@@ -44,27 +44,35 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios', 
     ['nuxt-i18n', {
-      vueI18nLoader: true,
+      // vueI18nLoader: true,
       locales:[
         {
           code: 'en',
-          name: 'English'
+          name: 'English',
+          iso: 'en-US',
+          file: 'en.js'
         },
         {
           code: 'es',
-          name: 'Español'
+          name: 'Español',
+          iso: 'es-DO',
+          file: 'en.js'
         },
         {
           code: 'de',
-          name: 'Deutsch' 
+          name: 'Deutsch',
+          iso: 'de-DE',
+          file: 'de.js' 
 
         }
       ],
-      strategy: 'prefix_except_default', 
+      // strategy: 'prefix_except_default', 
+
+      // detectBrowserLanguage: {
+      //   useCookie: false
+      // },
       defaultLocale: 'en',
-      detectBrowserLanguage: {
-        useCookie: false
-      },
+      langDir: 'locales/'
     }]
   ],
   /*

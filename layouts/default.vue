@@ -9,6 +9,9 @@
         {{ locale.name }}
       </nuxt-link>
     </div>
+    <div>
+      <nuxt-link :to="localePath('home')">Home</nuxt-link>
+    </div>
     <nuxt />
   </div>
 </template>
