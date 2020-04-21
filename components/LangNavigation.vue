@@ -5,3 +5,9 @@
     <nuxt-link :to="switchLocalePath('de')">Deutsch</nuxt-link>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'LangNavigation'
+}
+</script>

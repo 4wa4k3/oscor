@@ -1,7 +1,6 @@
 <template>
   <div>
     <LangNavigation />
-    <LangSwitcher />
     <div>
       <nuxt-link :to="localePath('index')">{{ $t('home') }}</nuxt-link>
       <nuxt-link :to="localePath('/products/introducers')">{{
@@ -17,11 +16,9 @@
 
 <script>
 import LangNavigation from '~/components/LangNavigation'
-import LangSwitcher from '~/components/LangSwitcher'
 export default {
   components: {
-    LangNavigation,
-    LangSwitcher
+    LangNavigation
   }
 }
 </script>
