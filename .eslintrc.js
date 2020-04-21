@@ -19,5 +19,9 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'vue/return-in-computed-property': 'off',
+    'vue/no-use-v-if-with-v-for': 'off'
   }
 }
