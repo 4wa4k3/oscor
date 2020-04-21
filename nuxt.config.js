@@ -44,7 +44,6 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios', 
     ['nuxt-i18n', {
-      // vueI18nLoader: true,
       locales:[
         {
           code: 'en',
@@ -66,27 +65,8 @@ export default {
 
         }
       ],
-      strategy: 'prefix_except_default', 
-
-      // detectBrowserLanguage: {
-      //   useCookie: false
-      // },
-      lazy: 'true',
       defaultLocale: 'en',
       langDir: 'locales/',
-      parsePages: false,
-      pages: {
-        home: {
-          en: '/',
-          es: '/',
-          it: '/',
-        },
-        'products/introducers/index': {
-          en:'/products/introducers',
-          es:'/productos/introductores',
-          de:'/produkte/einführer',
-        }
-      }
     }]
   ],
   /*
