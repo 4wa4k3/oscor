@@ -1,11 +1,19 @@
 <template>
   <div>
-    <h1>Introducers</h1>
+    <h1>{{ $t('introducers') }}</h1>
     <div>
       <div v-for="product in products" :key="product.id">
         <h1>{{ product.name }}</h1>
         <span>slug: {{ product.slug }}</span>
-        <nuxt-link :to="`introducers/${product.slug}`">view</nuxt-link>
+        <nuxt-link
+          :to="
+            localePath({
+              name: 'products-introducers-slug',
+              params: { slug: product.slug }
+            })
+          "
+          >{{ $t('view') }}</nuxt-link
+        >
       </div>
     </div>
   </div>

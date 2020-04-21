@@ -44,6 +44,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios', 
     ['nuxt-i18n', {
+      lazy: true,
       locales:[
         {
           code: 'en',

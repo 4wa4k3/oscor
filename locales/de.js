@@ -1,7 +1,6 @@
 export default {
-  pages: {
-    home: 'Startseite',
-    introducers: 'Einführer',
-    guiding_sheaths: 'Führungsscheiden'
-  }
+  home: 'Startseite',
+  introducers: 'Einführer',
+  guiding_sheaths: 'Führungsscheiden',
+  view: 'besichtigen'
 }
