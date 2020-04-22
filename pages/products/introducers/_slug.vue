@@ -6,6 +6,13 @@
 
 <script>
 export default {
+  nuxtI18n: {
+    paths: {
+      en: '/products/introducers/:slug',
+      es: '/productos/introductores/:slug',
+      de: '/produkte/einführer/:slug'
+    }
+  },
   data() {
     return {
       slug: this.$route.params.slug

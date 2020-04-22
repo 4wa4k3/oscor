@@ -21,6 +21,13 @@
 
 <script>
 export default {
+  nuxtI18n: {
+    paths: {
+      en: '/products/introducers',
+      es: '/productos/introductores',
+      de: '/produkte/einführer'
+    }
+  },
   computed: {
     products() {
       return this.$store.state.introducers.all

@@ -3,10 +3,10 @@
     <LangNavigation />
     <div>
       <nuxt-link :to="localePath('index')">{{ $t('home') }}</nuxt-link>
-      <nuxt-link :to="localePath('/products/introducers')">{{
+      <nuxt-link :to="localePath({ name: 'products-introducers' })">{{
         $t('introducers')
       }}</nuxt-link>
-      <nuxt-link :to="localePath('/products/guiding_sheaths')">{{
+      <nuxt-link :to="localePath({ name: 'products-guiding-sheaths' })">{{
         $t('guiding_sheaths')
       }}</nuxt-link>
     </div>
