@@ -4,7 +4,6 @@
     <div>
       <div v-for="product in products" :key="product.id">
         <h1>{{ product.name }}</h1>
-        <span>slug: {{ product.slug }}</span>
         <nuxt-link
           :to="
             localePath({
