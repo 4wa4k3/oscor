@@ -1,0 +1,7 @@
+{
+  "bisBisExtension":{
+    "short_description": "Bipolar Implantable Lead Extension",
+    "receptacle":"IS-1 Bi",
+    "connector": "IS-1 Bi"
+  }
+}

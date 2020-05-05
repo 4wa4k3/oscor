@@ -2,8 +2,10 @@ export const state = () => ({
   all: [
     {
       id: 'ayvo2vpy',
+      category: 'introducers',
       slug: 'adelante',
       name: 'Adelante',
+      short_name: 'adelante',
       short_description: 'Advanced Peel-Away Introducer',
       valve: 'No',
       peel_away: 'yes',
@@ -15,8 +17,10 @@ export const state = () => ({
     },
     {
       id: 'a5utkbu9',
-      slug: 'adelante-safesheath-ultra-light',
-      name: 'Adelante SafeSheath Ultra Light',
+      category: 'introducers',
+      slug: 'adelante-safesheath-ultra-lite',
+      name: 'Adelante SafeSheath Ultra Lite',
+      short_name: 'safesheathUltraLite',
       short_description: 'Hemostatic Valve Peel Away System',
       valve: 'yes',
       peel_away: 'yes',
@@ -28,8 +32,10 @@ export const state = () => ({
     },
     {
       id: 'aisfrhk2',
-      slug: 'adelante-seafesheat-ii',
+      category: 'introducers',
+      slug: 'adelante-safesheat-ii',
       name: 'Adelante SafeSheath II',
+      short_name: 'safesheathII',
       short_description: 'Hemostatic Peel Away Introducer with Side Port',
       valve: 'yes',
       peel_away: 'yes',
@@ -41,8 +47,10 @@ export const state = () => ({
     },
     {
       id: 'auso1zet',
+      category: 'introducers',
       slug: 'adelante-radial',
       name: 'Adelante Radial',
+      short_name: 'radial',
       short_description: 'Introducer with Hemostatic Valve',
       valve: 'yes',
       peel_away: 'no',
@@ -54,8 +62,10 @@ export const state = () => ({
     },
     {
       id: 'aafckmwb',
+      category: 'introducers',
       slug: 'adelante-magnum',
       name: 'Adelante Magnum',
+      short_name: 'magnum',
       short_description:
         'Hemostatic Valve Introducer For Large Vascular Access',
       valve: 'yes',

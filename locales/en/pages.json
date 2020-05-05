@@ -1,0 +1,15 @@
+{
+  "pages": {
+    "home": "Home",
+    "introducers": "Introducers",
+    "guiding_sheaths": "Guidig Sheaths",
+    "temporary_pacing": "Temporary Pacing",
+    "pacemakers": "Pacemakers",
+    "cables": "Cables",
+    "lead_adaptors": "Lead Adaptors",
+    "accessories": "Accessories",
+    "company":"Company",
+    "quality_policy": "Quality Policy"
+  },
+  "view": "view"
+}

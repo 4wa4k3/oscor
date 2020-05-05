@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>{{ product.name }}</h1>
+    <h2>{{ $t(`${product.short_name}.short_description`) }}</h2>
   </div>
 </template>
 

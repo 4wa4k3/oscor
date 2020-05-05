@@ -1,16 +1,14 @@
 <template>
   <div>
-    <h1>{{ $t('pages.guiding_sheaths') }}</h1>
+    <h1>{{ $t('pages.lead_adaptors') }}</h1>
     <div>
       <div v-for="product in products" :key="product.id">
         <h1>{{ product.name }}</h1>
-        <h2>
-          {{ $t(`${product.short_name}.short_description`) }}
-        </h2>
+        <h2>{{ $t(`${product.short_name}.short_description`) }}</h2>
         <nuxt-link
           :to="
             localePath({
-              name: 'products-guiding-sheaths-slug',
+              name: 'products-lead-adaptors-slug',
               params: { slug: product.slug }
             })
           "
@@ -25,14 +23,14 @@
 export default {
   nuxtI18n: {
     paths: {
-      en: '/products/guiding-sheaths',
-      es: '/productos/catéteres-de-guía',
-      de: '/produkte/führungsscheiden'
+      en: '/products/lead-adaptors',
+      es: '/productos/adaptadores-de-sondas',
+      de: '/produkte/leitungsadapter'
     }
   },
   computed: {
     products() {
-      return this.$store.state.guiding_sheaths.all
+      return this.$store.state.lead_adaptors.all
     }
   }
 }

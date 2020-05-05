@@ -9,9 +9,9 @@
 export default {
   nuxtI18n: {
     paths: {
-      en: '/products/guiding-sheaths/:slug',
-      es: '/productos/catéteres-de-guía/:slug',
-      de: '/produkte/führungsscheiden/:slug'
+      en: '/products/accessories/:slug',
+      es: '/productos/accesorios/:slug',
+      de: '/produkte/zubehör/:slug'
     }
   },
   data() {
@@ -21,7 +21,7 @@ export default {
   },
   computed: {
     product() {
-      return this.$store.state.guiding_sheaths.all.find(
+      return this.$store.state.accessories.all.find(
         (product) => product.slug === this.slug
       )
     }

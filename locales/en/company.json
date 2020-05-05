@@ -1,0 +1,42 @@
+{
+"company":{
+  "about":{
+    "title": "About Oscor", 
+    "p1":"OSCOR Inc. designs, develops, manufactures and markets a variety of highly specialized implantable cardiac pacing leads, venous access systems and diagnostic catheters.",
+    "p2":"OSCOR Inc. is also leveraging its proprietary lead technologies toward the development of new lead systems for a variety of cardiac and non-cardiac applications.",
+    "p3":"OSCOR Inc. sells its products in more than 70 countries outside the United States through a combination of direct sales efforts and unaffiliated distributors. Oscor also sells many of its lead and catheter products to leading medical device companies on an Original Equipment Manufacturer (OEM) basis."
+  },
+  "tribute": {
+    "title": "A TRIBUTE TO OUR FOUNDER: DR. PETER OSYPKA",
+    "p1":"I would like to use this opportunity to thank my father, Dr. Peter Osypka, who founded Oscor Inc. in 1982 in Palm Harbor, Florida. His hard work, visionary leadership, dedication and passion to develop the best in pacing leads and cardiac ablation made the success of Oscor possible. On behalf of all Oscor employees, I would like to thank him and show him our highest respect for his accomplishments and we are all looking forward to continuing working close with him and our friends at Dr.Osypka GmbH in Germany!", 
+    "p2":"I also would like to pay tribute to all Oscor employees for their superior performance and thank them for their dedication, teamwork, perseverance, and spirit. We are proud of our strong record of accomplishments and as we continue our rapid growth and face future challenges, we must continuously remind ourselves of who we are and what made us successful in the past. We will continue to invest in our employees, systems, and technology to support our mission of providing physicians the tools necessary to improve patient outcomes, while reducing recovery times and treatment costs.", 
+    "p3":"Thank you for your confidence and continued support of our efforts.",
+    "salutation": "Thomas Osypka, CEO"
+  }, 
+  "facilities":{
+    "title": "Facilities",
+    "p1": "A total of four ISO Certified and FDA registered manufacturing facilities (US and Dominican Republic). All extrusions, molding, machining, cleanroom manufacturing and packaging are performed at all of Oscor's facilities according to QSR guidelines under certified 100k and 10k cleanroom environment.",
+    "facility1": {
+      "title":"Oscor, Palm Harbor, US",
+      "description":"Oscor Headquarters"
+    },
+    "facility2": {
+      "title":"Oscor, Palm Harbor, US",
+      "description":"Innovation Center"
+    },
+    "facility3": {
+      "title":"Oscor Europe, Düsseldorf, Germany",
+      "description":"Sales & Distribution Center"
+    },
+    "facility4": {
+      "title":"Oscor Caribe, Santo Domingo, Dominican Republic",
+      "description":"Manufacturing Center of Excellence"
+    }
+  }, 
+  "distribution": {
+    "title": "Distribution", 
+    "p1": "Besides attractive discounts and customized sales incentives you will receive detailed product training and support. We would like to hear from you! Please don't hesitate to contact us for details at (US) 1-800-726-7267 or at (international) +1 727-937-2511 or just email us (please mention your desired sales territory and/or countr"
+  }
+}
+
+}

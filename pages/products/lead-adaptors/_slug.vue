@@ -9,9 +9,9 @@
 export default {
   nuxtI18n: {
     paths: {
-      en: '/products/guiding-sheaths/:slug',
-      es: '/productos/catéteres-de-guía/:slug',
-      de: '/produkte/führungsscheiden/:slug'
+      en: '/products/lead-adaptors/:slug',
+      es: '/productos/adaptadores-de-sondas/:slug',
+      de: '/produkte/leitungsadapter/:slug'
     }
   },
   data() {
@@ -21,7 +21,7 @@ export default {
   },
   computed: {
     product() {
-      return this.$store.state.guiding_sheaths.all.find(
+      return this.$store.state.lead_adaptors.all.find(
         (product) => product.slug === this.slug
       )
     }

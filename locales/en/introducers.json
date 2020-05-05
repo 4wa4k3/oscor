@@ -1,0 +1,20 @@
+
+  {
+  "introducers": {
+    "adelante": {
+      "short_description": "Advanced Peel-Away Introducer"
+    },
+    "adelante-safesheath-ultra-lite": {
+      "short_description": "Hemostatic Valve Peel Away System"
+    },
+    "adelante-safesheat-ii": {
+      "short_description": "Hemostatic Peel Away Introducer with Side Port"
+    },
+    "adelante-radial": {
+      "short_description": "Introducer with Hemostatic Valve"
+    },
+    "adelante-magnum": {
+      "short_description": "Hemostatic Valve Introducer For Large Vascular Access"
+    }
+  }
+  }

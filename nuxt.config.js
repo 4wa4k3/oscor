@@ -68,6 +68,7 @@ export default {
       ],
       defaultLocale: 'en',
       langDir: 'locales/',
+      encodePaths: false,
     }]
   ],
   /*

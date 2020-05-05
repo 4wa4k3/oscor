@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>{{ $t('pages.guiding_sheaths') }}</h1>
+    <h1>{{ $t('pages.pacemakers') }}</h1>
     <div>
       <div v-for="product in products" :key="product.id">
         <h1>{{ product.name }}</h1>
@@ -10,7 +10,7 @@
         <nuxt-link
           :to="
             localePath({
-              name: 'products-guiding-sheaths-slug',
+              name: 'products-temporary-pacing-pacemakers-slug',
               params: { slug: product.slug }
             })
           "
@@ -25,14 +25,14 @@
 export default {
   nuxtI18n: {
     paths: {
-      en: '/products/guiding-sheaths',
-      es: '/productos/catéteres-de-guía',
-      de: '/produkte/führungsscheiden'
+      en: '/products/temporary-pacing/pacemakers',
+      es: '/productos/estimulacíon-temporal/marcapasos',
+      de: '/produkte/vorübergehende-stimulation/herzschrittmacher'
     }
   },
   computed: {
     products() {
-      return this.$store.state.guiding_sheaths.all
+      return this.$store.state.pacemakers.all
     }
   }
 }

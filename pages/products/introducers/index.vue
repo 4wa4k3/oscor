@@ -1,9 +1,12 @@
 <template>
   <div>
-    <h1>{{ $t('introducers') }}</h1>
+    <h1>{{ $t('pages.introducers') }}</h1>
     <div>
       <div v-for="product in products" :key="product.id">
         <h1>{{ product.name }}</h1>
+        <h2>
+          {{ $t(`${product.short_name}.short_description`) }}
+        </h2>
         <nuxt-link
           :to="
             localePath({
