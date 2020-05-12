@@ -1,0 +1,16 @@
+%base-link {
+  font-family: $font_secondary;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: lighten($color_grey_light, 20);
+  text-decoration: none;
+  transition: color .3s;
+  &:hover {
+    color: $color_red;
+    text-decoration: underline;
+  }
+}
+
+%base-padding {
+  padding: 1.6rem 1.6rem*2; //
+}

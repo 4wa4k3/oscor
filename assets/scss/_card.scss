@@ -1,0 +1,62 @@
+.card {
+  width: 34.4rem;
+  background-color: $color_white;
+  box-shadow: 0 0 4px rgba($color_grey_dark, 0.2); 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1.6rem;
+
+  &-flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  &-heading{
+    padding: 1.6rem 1.6rem 0 .8rem;
+  }
+
+  &-img {
+    width: 34.4rem;
+    height: 19.4rem;
+    background-color: $color_grey_light;
+  }
+
+  &-cta {
+    // height: 3.6rem;
+    padding: .8rem 1.6rem .8rem .8rem;
+  }
+
+  & h1 {
+    font-size: $h5;
+    font-weight: 400;
+  }
+
+  & h2 {
+    font-size: $font_base_size;
+    margin-top: 0;
+    font-weight: 300;
+  }
+
+  & a {
+    text-align:right;
+    display:block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: lighten($color_red, 10);
+    font-family: $font_secondary;
+    text-decoration: none;
+    font-weight: 300;
+    min-width: 6.4rem;
+    height: 3.6rem;
+    padding: .4rem 0;
+    border-radius: .4rem;
+    transition: color .3s, text-decoration .6s; 
+
+    &:hover {
+      color: $color_red;
+      text-decoration: underline;
+    }
+  }
+}

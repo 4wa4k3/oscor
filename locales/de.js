@@ -8,9 +8,10 @@ export default {
     cables: 'Kabel',
     lead_adaptors: 'Leitungsadapter',
     accessories: 'Zubehör',
-    quality_policy: 'Qualitätspolitik'
+    quality_policy: 'Qualitätspolitik',
+    company: 'Unternehmen'
   },
-  view: 'besichtigen',
+  view: 'lern mehr',
   quality_policy: {
     p1:
       'Oscor ist bestrebt Produkte anzubieten, die höchste Ansprüche in Qualität, Sicherheit und Zuverlässigkeit für den Patienten erfüllen. Bei allem, was wir tun, versuchen wir der innovativste Anbieter mit der besten Kunden Dienstleistung zu sein, bei dem das Wohltun des Patienten immer im Vordergrund steht.',

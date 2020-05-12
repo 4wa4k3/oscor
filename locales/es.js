@@ -8,9 +8,10 @@ export default {
     cables: 'Cables',
     lead_adaptors: 'Adaptadores de Sondas',
     accessories: 'Accesorios',
-    quality_policy: 'Política De Calidad'
+    quality_policy: 'Política De Calidad',
+    company: 'Compañia'
   },
-  view: 'ver',
+  view: 'aprende más',
   quality_policy: {
     p1:
       'Oscor se esfuerza por ofrecer productos con las normas más altas de calidad, confiabilidad, servicio y soporte técnico.  En todo lo que hacemos nos aseguramos de ser el proveedor más innovador, orientados a satisfacer al cliente y al paciente.',
