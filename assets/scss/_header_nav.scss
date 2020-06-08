@@ -11,6 +11,11 @@
 
   & .lang-nav {
     align-self: center;
+    transition: transform .35s ease-in-out;
+
+    &-slide {
+      transform: translateX(-28.8rem);
+    }
   }
 
   & #menu_bottom_line, & #menu_center_line, & #menu_top_line{
@@ -33,10 +38,14 @@
       word-spacing: normal;
       text-indent: 0px;
       text-shadow: none;
-      display: inline-block;
+      display: flex;
       text-align: center;
       align-self: flex-end;
       // align-items: flex-start;
+      // justify-content: center;
+      // justify-items: center;
+      // justify-self: center;
+      // align-content: center;
       cursor: default;
       background-color: $color_grey_dark;
       box-sizing: border-box;
@@ -45,7 +54,7 @@
       text-transform: uppercase;
       font-weight: 500;
       // font: 300 $base_font_size $font_secondary;
-      padding: .4rem .8rem;
+      padding: .8rem .8rem;
       border-width: 0;
       border-style: none;
       border-color: none;

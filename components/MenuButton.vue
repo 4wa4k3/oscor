@@ -1,18 +1,50 @@
 <template>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-  >
-    <g id="menu">
-      <line id="menu_bottom_line" x1="-0.04" y1="22.03" x2="23.96" y2="22.04" />
-      <line id="menu_center_line" x1="0.01" y1="2" x2="24.01" y2="2.01" />
-      <line id="menu_top_line" x1="-0.01" y1="12.01" x2="23.99" y2="12.03" />
-    </g>
-  </svg>
+  <button aria-pressed="false" aria-label="menu" @click="navOpen()">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+    >
+      <g id="menu">
+        <line
+          v-for="(line, i) in mBtn"
+          :key="i"
+          :class="`${line.name}`"
+          :x1="line.x1"
+          :y1="line.y1"
+          :x2="line.x2"
+          :y2="line.y2"
+        />
+      </g>
+    </svg>
+  </button>
 </template>
 
 <script>
-export default {}
+import { mapGetters } from 'vuex'
+export default {
+  data() {
+    return {}
+  },
+  computed: {
+    ...mapGetters({
+      nav: 'navs/navActive',
+      mBtn: 'navs/mBtn'
+    })
+  },
+  methods: {
+    navOpen() {
+      this.$store.commit('navs/navOpen')
+    }
+  }
+}
 </script>
+
+<style lang="scss" scoped>
+.tLine,
+.cLine,
+.bLine {
+  stroke: white;
+}
+</style>

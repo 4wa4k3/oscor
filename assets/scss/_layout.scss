@@ -10,7 +10,7 @@
   min-width: 100vw;
   grid-template-columns:[full-start] 1fr repeat(12, [col] 1fr) 1fr [full-end];
   grid-template-rows:max-content minmax(max-content, 90vh) 10vh;
-  transition: transform .3s;
+  transition: transform .3s ease-in-out .05s;
 
 
   &.wrap-shrink {
@@ -40,6 +40,11 @@ section {
   &:last-of-type {
     margin-bottom: 14rem;
   }
+
+  & figure img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .section {
@@ -56,7 +61,8 @@ section {
   }
 
   &-large {
-    height: (67.5em);
+    height: auto;
+    // height: (67.5em);
   }
 
   &-hero {

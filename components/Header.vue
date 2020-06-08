@@ -1,12 +1,11 @@
 <template>
   <div class="top_nav">
     <div class="brand-container">
-      <button aria-pressed="false" aria-label="menu" @click="$emit('toggle')">
-        <MenuButton />
-      </button>
+      <MenuButton />
+
       <Logo :logo="logo" />
     </div>
-    <LangNavigation />
+    <LangNavigation :class="{ 'lang-nav-slide': nav }" />
   </div>
 </template>
 <script>
@@ -25,6 +24,11 @@ export default {
         width: '1.9725in',
         height: '0.4275in'
       }
+    }
+  },
+  computed: {
+    nav() {
+      return this.$store.getters['navs/navActive']
     }
   }
 }

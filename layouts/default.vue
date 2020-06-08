@@ -1,12 +1,8 @@
 <template>
   <div class="container">
-    <Nav :class="{ 'nav-open': showNav }" @toggle="showNav = !showNav" />
-    <div
-      class="wrap"
-      :class="{ 'wrap-shrink': showNav }"
-      @toggle="showNav = !showNav"
-    >
-      <Header @toggle="showNav = !showNav" />
+    <Nav :class="{ 'nav-open': nav }" />
+    <div class="wrap" :class="{ 'wrap-shrink': nav }">
+      <Header />
       <nuxt class="main" />
       <Footer />
     </div>
@@ -27,6 +23,16 @@ export default {
     return {
       showNav: true
     }
+  },
+  computed: {
+    nav() {
+      return this.$store.getters['navs/navActive']
+    }
   }
+  // methods: {
+  //   navOpen() {
+  //     this.$store.commit('navs/navOpen')
+  //   }
+  // }
 }
 </script>

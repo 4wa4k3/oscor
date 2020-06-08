@@ -4,6 +4,9 @@
       <div class="content-wrap">
         <h1>{{ product.name }}</h1>
         <h2>{{ $t(`${product.short_name}.short_description`) }}</h2>
+        <figure>
+          <img src="~assets/img/introducers/adelante/0001.png" alt="" />
+        </figure>
       </div>
     </section>
     <section class="section-large">
