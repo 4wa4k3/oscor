@@ -1,0 +1,36 @@
+.product {
+  &-title {
+    color: $color_grey_dark;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+
+  }
+
+  &-symbol {
+    font-size:3rem; 
+    vertical-align: top;
+  }
+
+  &-subhead {
+    color:$color_grey;
+    text-align: center;
+  }
+
+  &-hero__img {
+    overflow: hidden;
+    // background-color: pink;
+  }
+
+  &-description {
+    max-width: 800px;
+    margin: 0 auto;
+    & p  {
+      font-size: $h5;
+    }
+  }
+}
+
+// .hero-adelante {
+//   transform: rotate(90deg);
+// }
