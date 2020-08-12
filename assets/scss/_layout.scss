@@ -74,6 +74,14 @@ section {
       background-color: $color-white;
     }
   }
+
+  &-product-description {
+    padding-bottom: 7rem;
+  }
+
+  &-product-features {
+    background-color: lighten($color_grey_light, 17);
+  }
 }
 
 .content-wrap {

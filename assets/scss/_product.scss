@@ -19,6 +19,7 @@
 
   &-hero__img {
     overflow: hidden;
+    max-height: 70vh;
     // background-color: pink;
   }
 
@@ -29,6 +30,53 @@
       font-size: $h5;
     }
   }
+
+  &-features {
+
+    padding-top: 14rem;
+    & h2 {
+      color: $color_grey;
+      text-align: center;
+    }
+    
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 14rem;
+    }
+
+    &__feature {
+      margin: 1.6rem;
+      width: 25em;
+      height:25em;
+      
+
+      &-img {
+        background-color: $color_white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        padding: 1.6rem .8rem 0 0;
+        margin-bottom: 1.6rem;
+      }
+
+      &-txt {
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 1.6rem;
+        text-align: center;
+      }
+
+
+    }
+  }
+
+
+
 }
 
 // .hero-adelante {

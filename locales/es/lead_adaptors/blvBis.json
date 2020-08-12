@@ -1,0 +1,7 @@
+{
+  "blvBis":{
+    "short_description": "Bipolar Implantable Lead Adaptor",
+    "receptacle":"LV-1 Bi",
+    "connector": "IS-1 Bi"
+  }
+}

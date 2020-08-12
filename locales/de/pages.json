@@ -1,0 +1,16 @@
+{
+  "pages": {
+    "home": "Startseite",
+    "introducers": "Einführer",
+    "guiding_sheaths": "Führungsscheiden",
+    "temporary_pacing": "Vorübergehende Stimulation",
+    "pacemakers": "Herzschrittmacher",
+    "cables": "CabKabel",
+    "lead_adaptors": "Leitungsadapter",
+    "accessories": "Zubehör",
+    "company":"Unternehmen",
+    "quality_policy": "Qualitätspolitik"
+  },
+  "product_features": "Apparaatkenmerken",
+  "view": "lern mehr"
+}

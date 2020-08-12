@@ -1,0 +1,7 @@
+{
+  "lv1Plug":{
+    "short_description": "Implantable Lead Adaptor Connector Plugs",
+    "receptacle":"N/A",
+    "connector": "LV-1"    
+  }
+}
