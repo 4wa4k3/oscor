@@ -1,0 +1,32 @@
+
+
+.home {
+  &-page {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-container {
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+    transition: transform 0.56s ease-out;
+  }
+
+  &-wrap {
+    & > .top_nav {
+      background-color: rgba(white, .2);
+      backdrop-filter: blur(8px);
+      position: fixed;
+      top:0;
+      width: 100%;
+      z-index: 100;
+
+      & .brand-container button {
+        background-color: transparent;
+      }
+    }
+  }
+}

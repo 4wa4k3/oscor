@@ -143,45 +143,79 @@ export default {
     const subhead = this.$refs.subhead
     const hero = this.$refs.hero
     const features = this.$refs.features
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: hero,
-        start: 'top 45%',
-        end: 'bottom 100%',
-        scrub: 1,
-        markers: false,
-        toggleActions: 'restart pause reverse reset'
-      }
-    })
-    const tl2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: features,
-        start: 'top center',
-        end: 'bottom 100%',
-        scrub: 1,
-        markers: false,
-        toggleActions: 'restart pause none none'
-      }
-    })
+    const tl = gsap.timeline({})
+    const tl2 = gsap.timeline({})
     tl.addLabel('start')
-      .set(hero, { scale: 1.1 })
-      .from(hero, { opacity: 0, duration: 0.8 })
-      .from(hero, { rotation: 35 })
+      .set(
+        hero,
+        {
+          scale: 1.5
+        },
+        0
+      )
+      .from(
+        hero,
+        {
+          scrollTrigger: {
+            trigger: hero,
+            start: '+=100',
+            end: '+=100',
+            scrub: 1,
+            markers: false,
+            toggleActions: 'restart pause reverse reset'
+          },
+          duration: 0.8,
+          rotation: 35
+        },
+        0
+      )
       .to(hero, { scale: 1 })
       .from(description, {
+        scrollTrigger: {
+          trigger: hero,
+          start: 'top 25%',
+          end: 'bottom 100%',
+          scrub: 1,
+          markers: false,
+          toggleActions: 'restart pause reverse reset'
+        },
         duration: 0.5,
         opacity: 0,
         ease: 'power3.in',
         yPercent: -100
       })
 
-    tl2.addLabel('start').from('.product-features__feature', {
-      stagger: { each: 0.2 },
-      duration: 0.5,
-      opacity: 0,
-      ease: 'power3.in',
-      xPercent: 100
-    })
+    tl2
+      .addLabel('start')
+      .from('.product-features__feature', {
+        scrollTrigger: {
+          trigger: features,
+          start: 'top center',
+          end: 'bottom 100%',
+          scrub: 1,
+          markers: false,
+          toggleActions: 'play pause none none'
+        },
+        stagger: { each: 0.2 },
+        duration: 0.5,
+        opacity: 0,
+        ease: 'power3.in',
+        xPercent: 100
+      })
+      .from('.product-features__title', {
+        scrollTrigger: {
+          trigger: features,
+          start: 'top center',
+          end: 'bottom 100%',
+          scrub: 1,
+          markers: false,
+          toggleActions: 'play pause none none'
+        },
+        opacity: 0,
+        ease: 'circ',
+        yPercent: -100,
+        stagger: 0.3
+      })
 
     gsap.timeline().from([title, subhead], {
       duration: 0.9,
