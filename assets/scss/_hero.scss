@@ -1,48 +1,71 @@
-.hero {
-  &-video {
-    &-wrapper {
-      // position: fixed;
-      // top:0;
-      // left:0;
-      // width: 100%;
-      // padding-top: 56.25%;
-      // width: 100vw;
-      // height: 100vh;
-      // width: 1586px;
-      // height: 929px;
-      // overflow: hidden;
-    }
-    &-container {
-      display: table-cell;
-      vertical-align: middle;
-      width: 100%;
-      height: 100%;
-      // height: 100vh;
-      // position: absolute;
-      // position: fixed;
-      // top:0;
-      // left: 0;
-      // right: 0;
-      // bottom: 0;
-      // width: 100%;
-      // height: 100%;
-      // width: 1586px;
-      // height: 929px;
-      // background-color: blue;
+section {
+  height: 100vh;
+  display: flex;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 45%;
+  &:nth-child(odd) {
+    background-color:$color_grey_dark;
+  }
+  &:nth-child(even) {
+    background-color:lighten($color_grey_dark, 5);
+  }
+}
 
-      & video {
-        filter: contrast(70%);
-        position: fixed;
-        top:0;
-        left:0;
-        // margin-bottom: -1.6rem;
-        // width: 1586px;
-        // height: 929px;
-        width: 100%;
-        // height: 100%;
-        height: auto;
+// .video-wrapper {
 
-      }
-    }
+
+// }
+
+.video-container {
+
+  position: absolute;
+  height: 100vh;
+  top:0;
+  left: 0;
+  overflow: hidden;
+  
+  & video {
+
+    width: 100%;
+
+  }
+}
+
+.fp-tableCell {
+  width: 50%;
+  padding-left: 10%;
+  padding-right: 1.6rem*4;
+  display: flex;
+  flex-flow: column;
+  & h2 {
+    font-weight:500 ;
+    font-size: $h2;
+    color: $color_white;
+    margin-bottom: 1.6rem*2;
+  }
+  & p {
+    margin-top: 1.6rem*3;
+    color: $color_grey_light;
+    font-size: 2rem;
+  }
+  & span {
+    background-color: $color_red;
+    width: 45%;
+    display: block;
+    height: .8rem;
+    border-radius: .15rem;
+  }
+
+  & .cta {
+    align-self: flex-end;
+    margin-top: 1.6rem*3;
+    color: $color_red;
+    text-decoration: none;
+    border: .2rem solid $color_red;
+    padding: .8rem;
   }
 }

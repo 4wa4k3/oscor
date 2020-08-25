@@ -7,19 +7,27 @@
     overflow: hidden;
   }
 
-  &-container {
-    position: absolute;
-    width: 100%;
-    top:0;
-    left:0;
-    transition: transform 0.56s ease-out;
+  &-main {
+    transition: all .56s ease-out;
+    // position: absolute;
+    // width: 100%;
+    // height: 100%;
+    // top:0;
+    // left:0;
+    // transition: transform 0.56s ease-out;
+    // height: 100%;
+    // position: relative;
+    // touch-action: none;
+    // transform: translate3d(0px, -978px, 0px);
+    // transition: all 700ms ease 0s;
+
   }
 
   &-wrap {
     & > .top_nav {
-      background-color: rgba(white, .2);
+      background-color: rgba(black, .2);
       backdrop-filter: blur(8px);
-      position: fixed;
+      position: absolute;
       top:0;
       width: 100%;
       z-index: 100;
